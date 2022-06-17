@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.6rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --color-primario: rgb(242, 95, 58);
+    --color-secundario: rgb(35, 44, 81);
+    --color-tercero: rgb(143, 148, 167);
+    --color-cuarto: rgb(29, 30, 37);
+    --color-quinto: rgb(255, 239, 234);
+    --color-sexto: rgb(249, 249, 249);
+}
+/*-------------------------------------- Header
+Aca va el logo, menu opciones y boton inicio. Tambien la hamburgesa, para que se vea en version mobile
+-----------------------------------------------*/
+
+.header_menu{
+    align-items: center;
+    display: flex;
+    height: 17.4rem;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+}
+
+.header_menu_img{
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+}
+.header_menu nav{
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.header_menu a{
+    color: var(--color-secundario);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1.4rem;
+    text-decoration: none;
+}
+.header_menu form{
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.getstarted{
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    color: var(--color-quinto);
+    height: 4.4rem;
+    width: 13.4rem;
+}
+.getstarted-mobile{
+    align-items: center;
+    display: none;
+}
+
+/*----------------------------------------- Home - Presentacion y grafico demostrativo ------------------------------------------*/
+
+.home{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 3.5rem;
+}
+
+.home_frase{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+
+.home_frase h2{
+    color: var(--color-secundario);
+    font-size: 5.8rem;
+    font-weight: 700;
+    height: 19.8rem;
+}
+
+.home_frase p{
+    font-size: 1.655rem;
+    font-weight: 500;
+    height: 7rem;
+    line-height: 150%;
+    text-align: left;
+    width: 50%;
+}
+
+.home_graphic{
+    width: 45%;
+}
+.home_graphic_graph{
+    background-image: url(../image/graficos.svg);
+    background-position: center;
+    background-size: cover;
+    height: 52.5rem;
+}
+
+/*--------------------------------------------------- Us - Presentacion -------------------------------------------*/
+
+.us{
+    display: flex;
+    height: 54.9rem;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 3.5rem;
+}
+
+.us_manage{
+    width: 40%;
+}
+.us_manage__title{
+    color: var(--color-secundario);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 114%;
+    width: 43.5rem;
+}
+.us_manage__frase{
+    color: var(--color-cuarto);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    padding-top: 3.6rem;
+    width: 33.7rem;
+}
+.us_point{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 60rem;
+}
+.us_point__bloque{
+    align-items: flex-start;
+    display: flex;
+    height: 11rem;
+    gap: 3rem;
+}
+.us_point__text{
+    width: 437px;
+} 
+.us_point__bloque button{
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    color: var(--color-quinto);
+    height: 43px;
+    width: 69px;
+}
+
+.us_point__bloque h3{
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.us_point__bloque p{
+    color: var(--color-tercero);
+    font-size: 1.63rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+}
+/*-------------------------------------------------------- Comments -----------------------------------------------------------*/
+
+.comments{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+    padding: 0 5rem;
+    margin-bottom: 18rem;
+}
+
+.comments__title{
+    color: var(--color-secundario);
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 1rem 0 7rem 0;
+}
+
+.comments_opinion{
+    display: flex;
+    gap: 1rem;
+    margin: 5rem 0 9rem 0;
+}
+
+.comments_container__ali{
+    align-items: flex-end;
+    background-image: url("../image/avatar-ali.png");
+    background-position: top;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 25rem;
+    width: 44.5rem;
+}
+.comments_container__anisha{
+    align-items: flex-end;
+    background-image: url("../image/avatar-anisha.png");
+    background-position: top;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 25rem;
+    width: 44.5rem;
+}
+.comments_container__richard{
+    align-items: flex-end;
+    background-image: url("../image/avatar-richard.png");
+    background-position: top;   
+    background-size: 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 25rem;
+    width: 44.5rem;
+}
+.comments_opinion_text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.comments_opinion_text h3{
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.comments_opinion_text p{
+    color: #B9B9C1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+/*------------------------------------------------------------ Footer -------------------------------------------------*/
+.simplify{
+    align-items: center;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    height: 224px;
+}
+
+.simplify_menu{
+    align-items: center;
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.simplify_menu_p{
+    color: var(--color-quinto);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    width: 438px;
+}
+
+.simplify_menu_button{
+    background-color: var(--color-quinto);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(245, 245, 245, 0.5);
+    color: var(--color-primario);
+    height: 4.4rem;
+    width: 13.4rem;
+}
+
+/*------------------------------------------------------- Footer redes ------------------------------------------------------*/
+
+.social{
+    background-color: var(--color-cuarto);
+    display: flex;
+    height: 247px;
+}
+.social_media{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.social_menu{
+    align-items: center;
+    display: flex;  
+    justify-content: space-evenly;
+    width: 50%;
+}
+.social_menu_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.social_menu_right{
+    position: relative;
+    bottom: 15px;
+}
+.social_menu_nav a{
+    color: var(--color-quinto);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.social_copy{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+    width: 25%;
+}
+.social_media img{
+    max-height: 2.4rem;
+    max-width: 12rem;
+}
+.social_media_logos{
+    color: var(--color-quinto);
+    height: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.3rem;
+    height: 20px;
+    margin-right: 10px;
+    width: 2rem;
+}
+
+.social_copy_send input{
+    border: none;
+    border-radius: 5rem;
+    height: 4.5rem;
+    width: 20rem;
+}
+input::placeholder{
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.social_copy_send button{
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    color: var(--color-quinto);
+    height: 4.2rem;
+    width: 6.3rem;
+}
+
+.social_copy p{
+    color: var(--color-tercero);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.copy-mobile{
+    color: var(--color-tercero);
+    display: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+/*------------------------------------------ Seccion pseudo selectores ------------------------------------------------*/
+button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: var(--color-secundario);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+} 
+
+a:hover{
+    color: var(--color-primario);
+}
+
+i:hover{
+        box-shadow: 0 4px 16px rgb(255, 255, 255);
+        color: var(--color-primario);
+        transition: all 0.2s ease;
+    }
+
+/*----------------------------------------- MediaQuerie -------------------------------------------*/
+
+    @media screen and (min-width: 550px) and (max-width: 800px) {
+
+        /*---- MQ header ----*/
+        .header_menu nav{
+            display: none;
+        }
+        
+        .header_menu button{
+            display: none;
+        }
+        .getstarted-mobile{
+        display: block;
+        }
+
+        /*---- MQ main home ----*/
+        
+        .home{
+            align-items: center;
+            flex-direction: column-reverse;
+            max-width: 800px;
+            width: 100%;
+        }
+        .home_frase{
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+        .home_frase p{
+            text-align: center;
+            width: 100%;
+        }
+        .home_frase div{
+            width: 100%;
+        }
+        .home_graphic{
+            width: 100%;
+        }
+        .home_graphic_graph{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            max-width: 800px;
+        }
+
+    
+        /*---- MQ main us ----*/
+        .us{
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        .us_manage{
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 5rem;
+            padding: 0 6rem;
+            width: 100%;
+        }
+        .us_point__text h3{
+            background-color: rgba(242, 95, 58, 0.8);
+        }
+
+        /*---- MQ main us ----*/
+        .comments{
+            margin-bottom: 10rem;
+        }
+        .comments_container__anisha{
+            display: none;
+        }
+        .comments_container__richard{
+            display: none;
+        }
+
+        /*---- MQ footer simplify ----*/
+        .simplify{
+            height: 100%;
+            width: 100%;
+        }
+        .simplify_menu{
+            align-items: center;;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+        }
+        .simplify_menu_p{
+            width: 50%;
+        }
+        
+        /*---- MQ footer Social ----*/
+        .social{
+            align-items: center;
+            flex-direction: column-reverse;
+            height: 100%;
+            padding: 5rem;
+        }
+        .social_copy{
+            width: 100%;
+        }
+        .social_copy p{
+            display: none;
+        }
+        
+        .social_menu{
+            padding-bottom: 5rem;
+        }
+        
+        .social_media{
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: 3rem;
+        }
+
+        .copy-mobile{
+            display: block;
+        }
+}
